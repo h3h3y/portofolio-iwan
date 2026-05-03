@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-// Import gambar dari folder src/assets/images/
-import karkenBMNImage from '../assets/images/karkenbmn.png';
-import evitaImage from '../assets/images/manggala.png';
-import talkvoidImage from '../assets/images/talkvoid.png';
+// Hapus semua import gambar untuk sementara
+// import karkenBMNImage from '../assets/images/karkenbmn.png';
+// import evitaImage from '../assets/images/manggala.png';
+// import talkvoidImage from '../assets/images/talkvoid.png';
 
 const Projects = () => {
   const projects = [
@@ -12,7 +12,7 @@ const Projects = () => {
       title: 'KarkenBMN',
       description: 'Sistem untuk manajemen data Barang Milik Negara dengan fitur pelaporan dan inventarisasi yang lengkap. Dibangun untuk mendukung operasional BPS Kabupaten Pekalongan.',
       tech: ['CodeIgniter 4', 'jQuery', 'MySQL', 'Bootstrap'],
-      image: karkenBMNImage,
+      image: 'https://placehold.co/600x400/093C5D/white?text=KarkenBMN',
       link: 'https://s.bps.go.id/KarkenBMN',
       isRedirect: true,
       client: 'BPS Kabupaten Pekalongan',
@@ -21,7 +21,7 @@ const Projects = () => {
       title: 'Manggala',
       description: 'Sistem informasi untuk evaluasi kinerja dan administrasi internal perusahaan. Dikembangkan khusus untuk kebutuhan BPS Kabupaten Pekalongan.',
       tech: ['CodeIgniter 4', 'jQuery', 'MySQL', 'Bootstrap'],
-      image: evitaImage,
+      image: 'https://placehold.co/600x400/093C5D/white?text=Manggala',
       link: 'https://s.bps.go.id/Evita',
       isRedirect: true,
       client: 'BPS Kabupaten Pekalongan',
@@ -30,7 +30,7 @@ const Projects = () => {
       title: 'TalkVoid',
       description: 'Platform percakapan anonim sederhana untuk berbagi pesan tanpa identitas.',
       tech: ['React JS', 'Tailwind CSS', 'Laravel', 'Vercel'],
-      image: talkvoidImage,
+      image: 'https://placehold.co/600x400/093C5D/white?text=TalkVoid',
       link: 'https://talkvoid.vercel.app',
       github: 'https://github.com/h3h3y',
       isRedirect: false,
