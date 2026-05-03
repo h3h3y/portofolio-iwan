@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-// Hapus semua import gambar untuk sementara
-// import karkenBMNImage from '../assets/images/karkenbmn.png';
-// import evitaImage from '../assets/images/manggala.png';
-// import talkvoidImage from '../assets/images/talkvoid.png';
+// Import gambar dari folder assets/images
+import karkenBMNImage from '../assets/images/karkenbmn.png';
+import manggalaImage from '../assets/images/manggala.PNG';
+import talkvoidImage from '../assets/images/talkvoid.PNG';
 
 const Projects = () => {
   const projects = [
@@ -12,7 +12,7 @@ const Projects = () => {
       title: 'KarkenBMN',
       description: 'Sistem untuk manajemen data Barang Milik Negara dengan fitur pelaporan dan inventarisasi yang lengkap. Dibangun untuk mendukung operasional BPS Kabupaten Pekalongan.',
       tech: ['CodeIgniter 4', 'jQuery', 'MySQL', 'Bootstrap'],
-      image: 'https://placehold.co/600x400/093C5D/white?text=KarkenBMN',
+      image: karkenBMNImage,
       link: 'https://s.bps.go.id/KarkenBMN',
       isRedirect: true,
       client: 'BPS Kabupaten Pekalongan',
@@ -21,7 +21,7 @@ const Projects = () => {
       title: 'Manggala',
       description: 'Sistem informasi untuk evaluasi kinerja dan administrasi internal perusahaan. Dikembangkan khusus untuk kebutuhan BPS Kabupaten Pekalongan.',
       tech: ['CodeIgniter 4', 'jQuery', 'MySQL', 'Bootstrap'],
-      image: 'https://placehold.co/600x400/093C5D/white?text=Manggala',
+      image: manggalaImage,
       link: 'https://s.bps.go.id/Evita',
       isRedirect: true,
       client: 'BPS Kabupaten Pekalongan',
@@ -30,7 +30,7 @@ const Projects = () => {
       title: 'TalkVoid',
       description: 'Platform percakapan anonim sederhana untuk berbagi pesan tanpa identitas.',
       tech: ['React JS', 'Tailwind CSS', 'Laravel', 'Vercel'],
-      image: 'https://placehold.co/600x400/093C5D/white?text=TalkVoid',
+      image: talkvoidImage,
       link: 'https://talkvoid.vercel.app',
       github: 'https://github.com/h3h3y',
       isRedirect: false,
@@ -57,6 +57,10 @@ const Projects = () => {
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback jika gambar gagal load
+                    e.target.src = `https://placehold.co/600x400/093C5D/white?text=${project.title}`;
+                  }}
                 />
                 {project.client && (
                   <div className="absolute bottom-2 left-2 bg-[#093C5D]/80 backdrop-blur-sm text-white text-xs px-2 py-1 rounded">
