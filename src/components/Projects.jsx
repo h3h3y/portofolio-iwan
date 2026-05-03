@@ -2,9 +2,9 @@ import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 // Import gambar dari folder src/assets/images/
-import karkenBMNImage from '../assets/images/karkenbmn.png';
-import evitaImage from '../assets/images/manggala.png';
-import talkvoidImage from '../assets/images/talkvoid.png';
+// import karkenBMNImage from '../assets/images/karkenbmn.png';
+// import evitaImage from '../assets/images/manggala.png';
+// import talkvoidImage from '../assets/images/talkvoid.png';
 
 const Projects = () => {
   const projects = [
