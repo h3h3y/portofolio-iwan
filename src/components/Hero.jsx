@@ -130,7 +130,7 @@ const Hero = () => {
               Hubungi Saya
             </button>
             <a
-              href="https://h3h3y.github.io/cv-iwan.github.io/"
+              href="https://drive.google.com/file/d/17iVt4XlUCW_nTydoGr6Z0DgJI4B1gAcJ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border border-[#093C5D] text-[#093C5D] dark:text-white rounded-full hover:bg-[#093C5D]/10 dark:hover:bg-white/10 hover:scale-105 transition-all duration-300"
